@@ -8,35 +8,25 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="background.css">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
+    <link href="head.css" rel="stylesheet">
 
     <title>@yield('title')</title>
 
-    <style>
-    .gambar
-    {
-        background-color: blue;
-    }
-    </style>
+   
 
   </head>
   <body>
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a class="navbar-brand" href="/">MY website</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-item nav-link " href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link " href="{{url('/about')}}">Tentang Kami</a>
-            <a class="nav-item nav-link" href="{{url('/portofolio')}}">Portofolio</a>
-            </div>
-        </div>
-    </nav>
+    @yield('nav')
+
     @yield('head')
     
     @yield('content')
+
+    @yield('card')
 
     @yield('footer')
 
