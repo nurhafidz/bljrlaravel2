@@ -8972,4 +8972,13 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important;
   }
 }
+.img {
+  width:80%;
+  z-index: 0;  }
+   
+  .text-over-img {
+    z-index:1;
+    font-size: 1.2em;
+    margin-top: -100px;
+  }
 /*# sourceMappingURL=bootstrap.css.map */

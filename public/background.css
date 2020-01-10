@@ -1,0 +1,61 @@
+.container3{
+    display: grid;
+    grid-template-columns: 350px auto 300px;
+    grid-template-rows: 605px 605px 605px;
+    grid-template-areas:
+            "menu cont sidenav";
+    position: fixed;      
+    z-index: 1;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    }
+    
+    menu {
+        grid-area: menu; 
+    }
+    
+    cont{
+        grid-area: cont;
+        background: white;
+        padding: 50px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    cont p{ color:black; }
+    
+    sidenav {
+        grid-area: sidenav;
+        background: #f8f8f8;
+        padding: 50px;
+        color: black;
+        font-size: 11px;
+        font-family: arial;  
+    }
+    
+    sidenav a:link {
+        color: black;
+    }
+    
+    sidenav a:visited {
+        color: black;
+    }
+    
+    sidenav a:hover {
+        text-decoration: none;
+        color: black;
+    }
+    
+    ul.b {
+            list-style-type: square;
+    }
+    
+    
+    /* table untuk page */
+    
+    table#t01 th, tr, td{
+            width: 100%;
+            padding: 5px;
+    }

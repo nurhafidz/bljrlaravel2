@@ -2,15 +2,10 @@
 
 @section('title','about')
 
-@section('container')
+@section('content')
     <div class="cointainer">
-        <div class="bg-secondary text-white">
-            <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <!-- Content here -->
-                <div class="text-center text-monospace" style="font-size: 100px">
-                    Hello {{$nama}}
-                </div>
-            </div>
+        <div class="content">
+            <img src="{{ asset('img/background.jpeg') }}" class="responsive-background" style="transform: translate3d(0px, 0px, 0px);">
         </div>
     </div>
 

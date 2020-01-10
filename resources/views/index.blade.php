@@ -2,16 +2,31 @@
 
 @section('title','home')
 
-@section('container')
-    <div class="cointainer">
-        <div class="bg-secondary text-white">
-            <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <!-- Content here -->
-                <div class="text-center text-monospace" style="font-size: 100px">
-                    Hello home
-                </div>
+@section('head')
+    <div>
+        
+        <img src="{{url('img/background2.jpg')}}" class="img-fluid" alt="Responsive image">
+        <div>
+            <div class="carousel-caption" >
+                <h1 class="display-1 font-weight-bolder">WELCOME</h1>
+                <hr style="height:5px; background-color:white;width:auto;">
+                <h3>To MY WEBSITE</p>
             </div>
         </div>
     </div>
+    
+@endsection
 
+@section('content')
+<div class="container">
+    <div>
+
+    </div>
+</div>    
+@endsection
+
+@section('footer')
+        <div class="card-footer text-muted">
+            Copyright &copy;
+        </div>
 @endsection

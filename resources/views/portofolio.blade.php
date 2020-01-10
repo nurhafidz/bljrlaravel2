@@ -2,7 +2,7 @@
 
 @section('title','portofolio')
 
-@section('container')
+@section('content')
     <div class="cointainer">
         <div class="bg-secondary text-white">
             <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
